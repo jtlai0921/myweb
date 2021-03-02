@@ -346,3 +346,12 @@ java.net.UnknownHostException: jope.ow2.org
 
 !ENTRY org.eclipse.wst.html.ui 1 1 2021-03-02 20:02:15.709
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-03-02 20:54:10.444
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-03-02 20:54:10.451
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-03-02 20:54:10.457
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
