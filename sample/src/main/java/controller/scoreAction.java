@@ -3,17 +3,23 @@ package controller;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class scoreAction extends ActionSupport {
-	private String score;
+	private Integer score;
 
-	public String getScore() {// response
+	public Integer getScore() {
 		return score;
 	}
 
-	public void setScore(String score) {// request
+	public void setScore(Integer score) {
 		this.score = score;
 	}
-	public String execute() throws Exception
-	{
-		return "";
+
+	public String execute() throws Exception {
+		if (getScore() >= 60) {
+			return "yes";
+		} else {
+			return "no";
+		}
+
 	}
+
 }
