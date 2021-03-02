@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>scoreController</servlet-name>
+  	<display-name>scoreController</display-name>
+  	<description></description>
+  	<servlet-class>controller.scoreController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>scoreController</servlet-name>
+  	<url-pattern>/scoreController</url-pattern>
+  </servlet-mapping>
 </web-app>
