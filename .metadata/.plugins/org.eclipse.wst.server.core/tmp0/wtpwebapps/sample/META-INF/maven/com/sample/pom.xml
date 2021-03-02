@@ -27,7 +27,6 @@
 			<artifactId>struts2-core</artifactId>
 			<version>2.5.26</version>
 		</dependency>
-
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
