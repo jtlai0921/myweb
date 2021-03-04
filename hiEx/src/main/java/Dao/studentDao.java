@@ -11,10 +11,10 @@ public class studentDao implements implDao{
 
 	public static void main(String[] args) {
 		//System.out.println(new studentDao().query(1));
-		student s=(student) new studentDao().query(2);
-		s.setName("ussssuu");
+		student s=(student) new studentDao().query(3);
 		
-		new studentDao().updateObject(s);
+		
+		new studentDao().deleteObject(s);
 		
 
 	}
@@ -36,12 +36,21 @@ public class studentDao implements implDao{
 		return s;
 	}
 
-
 	@Override
 	public void updateObject(Object o) {
 		Session se=implDao.getDB();
 		Transaction t=se.beginTransaction();
 		se.update(o);
+		t.commit();
+		se.close();
+		
+	}
+
+	@Override
+	public void deleteObject(Object o) {
+		Session se=implDao.getDB();
+		Transaction t=se.beginTransaction();
+		se.delete(o);
 		t.commit();
 		se.close();
 		

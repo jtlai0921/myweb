@@ -6,7 +6,6 @@ INDEX VERSION 1.131+C:\myweb\.metadata\.plugins\org.eclipse.jdt.core
 1964026335.index
 1753460824.index
 4208723882.index
-3304037505.index
 3587363205.index
 1579828750.index
 2761785907.index
@@ -35,7 +34,6 @@ INDEX VERSION 1.131+C:\myweb\.metadata\.plugins\org.eclipse.jdt.core
 176099455.index
 1068955717.index
 29377269.index
-2649006000.index
 1735269188.index
 1676288487.index
 2774415530.index
@@ -45,20 +43,15 @@ INDEX VERSION 1.131+C:\myweb\.metadata\.plugins\org.eclipse.jdt.core
 4198650324.index
 3391529300.index
 3364920906.index
-1331632433.index
 2647262146.index
 2200223714.index
 781675358.index
 1606231598.index
 3029593718.index
-2225459677.index
 310547228.index
 1740232274.index
-988813504.index
-400134853.index
 2367684546.index
 969968605.index
 1137569772.index
 4061256351.index
-1126964656.index
 1367718106.index
