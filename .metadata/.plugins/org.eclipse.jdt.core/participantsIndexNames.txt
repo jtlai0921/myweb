@@ -1,3 +1,5 @@
 INDEX VERSION 1.131
 C:\myweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2833589560.index
 \sample\src\main\java
+C:\myweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2141108774.index
+\hiEx\src\main\java
