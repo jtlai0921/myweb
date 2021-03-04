@@ -12,16 +12,22 @@ public interface implDao {
 		Session se=sf.openSession();
 		return se;
 	}
+	
+	
 	//新增
-		void add(Object o);
-		
-		
-		//查詢
-		
-		
-		//修改
-		
-		
-		
-		//刪除
+	void add(Object o);
+	
+	
+	//查詢
+	Object query(int id);
+
+//修改
+	void updateObject(Object o);
+	
+	
+	
+	
+	
+	//刪除
+
 }

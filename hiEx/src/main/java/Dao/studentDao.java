@@ -10,8 +10,12 @@ import Model.student;
 public class studentDao implements implDao{
 
 	public static void main(String[] args) {
-		student s=new student("abc",10,20);
-		new studentDao().add(s);
+		//System.out.println(new studentDao().query(1));
+		student s=(student) new studentDao().query(2);
+		s.setName("ussssuu");
+		
+		new studentDao().updateObject(s);
+		
 
 	}
 
@@ -20,6 +24,24 @@ public class studentDao implements implDao{
 		Session se=implDao.getDB();
 		Transaction t=se.beginTransaction();
 		se.save(o);
+		t.commit();
+		se.close();
+		
+	}
+
+	@Override
+	public Object query(int id) {
+		Session se=implDao.getDB();
+		student s=se.get(student.class, id);
+		return s;
+	}
+
+
+	@Override
+	public void updateObject(Object o) {
+		Session se=implDao.getDB();
+		Transaction t=se.beginTransaction();
+		se.update(o);
 		t.commit();
 		se.close();
 		
