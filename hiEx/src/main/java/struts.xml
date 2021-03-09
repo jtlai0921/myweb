@@ -5,7 +5,7 @@ Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <package name="default" extends="struts-default">  
   
 <action name="addAction" class="Controller.addAction">  
-	<result name="success">success.html</result>  
+	<result name="success" type="redirect">success.html</result>  
 </action>  
   
 </package>  
