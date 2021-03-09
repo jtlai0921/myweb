@@ -1,4 +1,9 @@
+<!DOCTYPE html>
 <html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+</head>
 <body>
 <h2>Hello World!</h2>
 <form action="addAction" method="post">
