@@ -14,7 +14,15 @@ public class studentDao implements implDao{
 
 	public static void main(String[] args) {
 		
-		List<Object> l=new studentDao().queryAll();
+		Session se=implDao.getDB();
+		String HQL="from student as p where p.id>=?1 and p.id<=?2";
+		
+		Query q=se.createQuery(HQL);		
+		q.setParameter(1, 8);
+		q.setParameter(2, 13);
+		
+		
+		List<Object> l=q.list();
 		
 		for(Object o:l)
 		{
