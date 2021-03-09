@@ -2,6 +2,7 @@ package Dao;
 
 import java.util.List;
 
+import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -15,12 +16,16 @@ public class studentDao implements implDao{
 	public static void main(String[] args) {
 		
 		Session se=implDao.getDB();
-		String HQL="from student as p where p.id>=?1 and p.id<=?2 and p.name=?3";
+		/*String HQL="from student as p where p.id>=?1 and p.id<=?2 and p.name=?3";
 		
 		Query q=se.createQuery(HQL);		
 		q.setParameter(1, 8);
 		q.setParameter(2, 13);
 		q.setParameter(3, "tttt");
+		*/
+		String SQL="select * from student";
+		SQLQuery q=se.createSQLQuery(SQL);
+		q.addEntity(student.class);
 		
 		List<Object> l=q.list();
 		
