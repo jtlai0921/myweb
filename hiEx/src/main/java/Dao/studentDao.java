@@ -14,17 +14,14 @@ public class studentDao implements implDao{
 
 	public static void main(String[] args) {
 		
-		Session se=implDao.getDB();
-		String HQL="from student";
-		Query q=se.createQuery(HQL);
+		List<Object> l=new studentDao().queryAll();
 		
-		List<student> l=q.list();
-		//System.out.println(l);
-		
-		for(student s:l)
+		for(Object o:l)
 		{
+			student s=(student)o;
 			System.out.println("id:"+s.getId()+"\tname:"+s.getName());
 		}
+		
 
 	}
 
@@ -63,6 +60,16 @@ public class studentDao implements implDao{
 		t.commit();
 		se.close();
 		
+	}
+
+	@Override
+	public List<Object> queryAll() {
+		Session se=implDao.getDB();
+		String HQL="from student";
+		Query q=se.createQuery(HQL);		
+		List<Object> l=q.list();
+		
+		return l;
 	}
 
 }
