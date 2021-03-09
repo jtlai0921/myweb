@@ -1,21 +1,30 @@
 package Dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
 import Model.student;
 
 public class studentDao implements implDao{
 
 	public static void main(String[] args) {
-		System.out.println(new studentDao().query(1));
-		student s=(student) new studentDao().query(3);
 		
+		Session se=implDao.getDB();
+		String HQL="from student";
+		Query q=se.createQuery(HQL);
 		
-		new studentDao().deleteObject(s);
+		List<student> l=q.list();
+		//System.out.println(l);
 		
+		for(student s:l)
+		{
+			System.out.println("id:"+s.getId()+"\tname:"+s.getName());
+		}
 
 	}
 
