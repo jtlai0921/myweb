@@ -11,11 +11,21 @@ import org.hibernate.query.Query;
 
 import Model.student;
 
-public abstract class studentDao implements implDao{
+public class studentDao implements implDao{
 
 	public static void main(String[] args) {
 		
-		Session se=implDao.getDB();
+		List<Object> l=new studentDao().query(8, 13);
+		for(Object o:l)
+		{
+			student s=(student)o;
+			System.out.println("id:"+s.getId()+"\tname:"+s.getName());
+		}
+		
+		
+		
+		
+		//Session se=implDao.getDB();
 		/*String HQL="from student as p where p.id>=?1 and p.id<=?2 and p.name=?3";
 		
 		Query q=se.createQuery(HQL);		
@@ -23,7 +33,7 @@ public abstract class studentDao implements implDao{
 		q.setParameter(2, 13);
 		q.setParameter(3, "tttt");
 		*/
-		String SQL="select * from student";
+		/*String SQL="select * from student";
 		SQLQuery q=se.createSQLQuery(SQL);
 		q.addEntity(student.class);
 		
@@ -33,7 +43,7 @@ public abstract class studentDao implements implDao{
 		{
 			student s=(student)o;
 			System.out.println("id:"+s.getId()+"\tname:"+s.getName());
-		}
+		}*/
 		
 
 	}
@@ -82,6 +92,18 @@ public abstract class studentDao implements implDao{
 		Query q=se.createQuery(HQL);		
 		List<Object> l=q.list();
 		
+		return l;
+	}
+
+	@Override
+	public List<Object> query(int start, int end) {
+		Session se=implDao.getDB();
+		String HQL="from student as p where p.id>=?1 and p.id<=?2 ";
+		
+		Query q=se.createQuery(HQL);		
+		q.setParameter(1, start);
+		q.setParameter(2, end);
+		List<Object> l=q.list();
 		return l;
 	}
 
