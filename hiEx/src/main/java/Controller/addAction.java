@@ -6,6 +6,10 @@ import Dao.studentDao;
 import Model.student;
 
 public class addAction extends ActionSupport{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private Integer chi;
 	private Integer eng;

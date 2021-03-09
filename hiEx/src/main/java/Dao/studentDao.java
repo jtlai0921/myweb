@@ -10,7 +10,7 @@ import Model.student;
 public class studentDao implements implDao{
 
 	public static void main(String[] args) {
-		//System.out.println(new studentDao().query(1));
+		System.out.println(new studentDao().query(1));
 		student s=(student) new studentDao().query(3);
 		
 		
