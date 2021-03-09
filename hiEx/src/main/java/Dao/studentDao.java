@@ -11,7 +11,7 @@ import org.hibernate.query.Query;
 
 import Model.student;
 
-public class studentDao implements implDao{
+public abstract class studentDao implements implDao{
 
 	public static void main(String[] args) {
 		

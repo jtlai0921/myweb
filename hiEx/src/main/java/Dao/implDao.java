@@ -23,7 +23,7 @@ public interface implDao {
 	//查詢
 	Object query(int id);
 	List<Object> queryAll();
-	
+	List<Object> query(int start,int end);
 	
 	//修改
 	void updateObject(Object o);
