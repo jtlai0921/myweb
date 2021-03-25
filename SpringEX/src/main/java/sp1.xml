@@ -4,6 +4,7 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+  
    <bean id = "a1" class = "Model.A">
    		<property name="Lcd" value="100"/>  
    </bean>
@@ -13,12 +14,18 @@
    </bean>
    <bean id="b" class="Model.B"/>
    
-   
-   <bean id="f1" class="Model.F1"/>
+    <bean id="f1" class="Model.F1"/>
    <bean id="f2" class="Model.F1">
    		<property name="a1" ref="a1"/>	
    		<property name="a2" ref="a2"/>
    		<property name="b" ref="b"/>
+   </bean>
+   
+   <bean id="f3" class="Model.F1">
+   		<constructor-arg index="0" ref="a1"/>
+   		<constructor-arg index="1" ref="a2"/>
+   		<constructor-arg index="2" ref="b"/>   
    </bean>	
+   
 
 </beans>

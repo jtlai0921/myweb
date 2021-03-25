@@ -1599,3 +1599,11 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2021-03-25 20:56:29,526 [Worker-64: Launching test2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\myweb\SpringEX\src\main\resources
 2021-03-25 20:56:29,533 [Worker-64: Launching test2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-03-25 20:56:29,533 [Worker-64: Launching test2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\myweb\SpringEX\src\test\resources
+2021-03-25 21:04:17,502 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-25 21:04:17,502 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\myweb\SpringEX\src\main\resources
+2021-03-25 21:04:17,509 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-25 21:04:17,510 [Worker-69: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\myweb\SpringEX\src\test\resources
+2021-03-25 21:04:44,789 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-25 21:04:44,796 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\myweb\SpringEX\src\main\resources
+2021-03-25 21:04:44,804 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-03-25 21:04:44,805 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\myweb\SpringEX\src\test\resources

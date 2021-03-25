@@ -34,6 +34,13 @@ public class test2 {
 		System.out.println(f2.getA1()+"\t"+f2.getA1().getLcd());
 		System.out.println(f2.getA2()+"\t"+f2.getA2().getLcd());
 		System.out.println(f2.getB()+"\t"+f2.getB().getRam());
+		System.out.println("=============================");
+		F1 f3=A1.getBean("f3",F1.class);
+		
+		System.out.println(f3);
+		System.out.println(f3.getA1()+"\t"+f3.getA1().getLcd());
+		System.out.println(f3.getA2()+"\t"+f3.getA2().getLcd());
+		System.out.println(f3.getB()+"\t"+f3.getB().getRam());
 	}
 
 }
