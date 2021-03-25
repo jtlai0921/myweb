@@ -10,6 +10,13 @@ public class F1 {
 		a2=new A(10);
 		b=new B();
 	}
+	
+	public F1(A a1, A a2, B b) {
+		super();
+		this.a1 = a1;
+		this.a2 = a2;
+		this.b = b;
+	}
 	public A getA1() {
 		return a1;
 	}
@@ -28,5 +35,4 @@ public class F1 {
 	public void setB(B b) {
 		this.b = b;
 	}
-
 }
