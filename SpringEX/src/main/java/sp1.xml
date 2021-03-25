@@ -4,8 +4,16 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id = "a1" class = "Model.A"/>
-   <bean id="a2" class="Model.A"/>
+   <bean id = "a1" class = "Model.A">
+   		<property name="Lcd" value="100"/>  
+   </bean>
+   
+   <bean id="a2" class="Model.A">
+   		<constructor-arg index="0" value="200"/>
+   </bean>
    <bean id="b" class="Model.B"/>
+   
+   
+   <bean id="f1" class="Model.F1"/>
 
 </beans>
