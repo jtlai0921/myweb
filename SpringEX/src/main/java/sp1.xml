@@ -15,5 +15,10 @@
    
    
    <bean id="f1" class="Model.F1"/>
+   <bean id="f2" class="Model.F1">
+   		<property name="a1" ref="a1"/>	
+   		<property name="a2" ref="a2"/>
+   		<property name="b" ref="b"/>
+   </bean>	
 
 </beans>
