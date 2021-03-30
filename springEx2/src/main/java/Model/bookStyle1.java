@@ -52,7 +52,18 @@ public class bookStyle1 {
 		this.phone = phone;
 	}
 	
-	
+	public String show()
+	{
+		String sum="";
+		for(int i=0;i<books.length;i++)
+		{
+			sum=sum+books[i]+" ";
+		}
+		
+		return sum+"\n"+getAddress()+
+				"\n"+getPrice()+
+				"\n"+getPhone();
+	}
 	
 	
 	

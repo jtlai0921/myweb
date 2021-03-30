@@ -18,13 +18,9 @@ public class test {
 		ApplicationContext a=new ClassPathXmlApplicationContext("sp1.xml");
 		
 		bookStyle1 b=a.getBean("b",bookStyle1.class);
-		String[] s=b.getBooks();
 		
-		System.out.println(s[0]);
 		
-		System.out.println(b.getAddress());
-		System.out.println(b.getPrice());
-		System.out.println(b.getPhone());
+		System.out.println(b.show());
 
 	}
 
