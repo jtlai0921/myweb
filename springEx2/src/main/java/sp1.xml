@@ -11,9 +11,33 @@
   				<value>javaWEB</value>
   			</list>  		
   		</property> 
-  		<property name="address"></property> 
-  		<property name="price"></property> 
-  		<property name="phone"></property>   
+  		<property name="address">
+  			<list>
+  				<value>台北</value>
+  				<value>台中</value>
+  				<value>台南</value>
+  				<value>高雄</value>
+  			</list>
+  		</property> 
+  	
+  	
+  		<property name="price">
+  			<map>
+  				<entry key="java7" value="100.5"/>
+  				<entry key="java8" value="100.5"/>
+  				<entry key="javaWEB" value="100.5"/>
+  			</map>
+  		</property> 
+  		
+  		
+  		<property name="phone">
+  			<list>
+  				<value>0123</value>
+  				<value>0000</value>
+  			
+  			</list>
+  		
+  		</property>   
    </bean>
 
 </beans>
