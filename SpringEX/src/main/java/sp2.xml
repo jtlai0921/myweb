@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   <bean id="a" class="Model.A">
+   		<property name="Lcd" value="500"/>
+   </bean>
+   
+   <bean id="b1" class="Model.B">
+   		<constructor-arg value="100"/>
+   </bean>
+   
+    <bean id="b2" class="Model.B">
+   		<constructor-arg value="150"/>
+   </bean>
+   
+   <bean id="c" class="Model.C">
+   	<property name="Mouse" value="70"/>
+   </bean>
+   
+   <bean id="f" class="Model.F2">
+   		<constructor-arg ref="a"/>
+   		<constructor-arg ref="b1"/>
+   		<constructor-arg ref="b2"/>
+   		<constructor-arg ref="c"/>
+   
+   </bean>
+   
+</beans>

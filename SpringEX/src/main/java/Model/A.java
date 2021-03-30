@@ -1,7 +1,7 @@
 package Model;
 
 public class A {
-	private Integer Lcd=30;
+	private Integer Lcd;
 
 	public A() {
 		super();
