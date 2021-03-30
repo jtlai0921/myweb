@@ -7,29 +7,24 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import Model.bookStyle1;
 
 public class test {
 
 	public static void main(String[] args) {
-		String[] books= {"java","javaWEB"};
-		List<String> address=Arrays.asList("台北","台中","台南","高雄");
+		ApplicationContext a=new ClassPathXmlApplicationContext("sp1.xml");
 		
-		Map<String,Double> price=new TreeMap();
-		price.put("java7", 600.5);
-		price.put("java8", 600.5);
-		price.put("javaWEB", 600.5);
+		bookStyle1 b=a.getBean("b",bookStyle1.class);
+		String[] s=b.getBooks();
 		
-		Set<String> phone=new TreeSet();
-		phone.add("012");
-		phone.add("013");
-		phone.add("032");
+		System.out.println(s[0]);
 		
-		
-		bookStyle1 b=new bookStyle1(books,address,price,phone);
-		
-		
-		
+		System.out.println(b.getAddress());
+		System.out.println(b.getPrice());
+		System.out.println(b.getPhone());
 
 	}
 
