@@ -4,7 +4,7 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id="m" class = "Model.member">
+   <bean id = "m" class = "Model.member">
      	<property name="name" value="teacher"></property>
      	<property name="address" value="台北"></property>
      	<property name="interest">
@@ -28,5 +28,7 @@
    		</property>
    
    </bean>
+   
+   <bean id="MF" class="Model.ModelFactory" autowire="byType"/>
 
 </beans>
