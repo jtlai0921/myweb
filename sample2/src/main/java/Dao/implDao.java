@@ -18,7 +18,7 @@ public interface implDao {
 		}
 		
 	static ApplicationContext a1=new ClassPathXmlApplicationContext("sp1.xml");	
-		
+	static ApplicationContext a2=new ClassPathXmlApplicationContext("sp2.xml");	
 	
 	//新增
 		

@@ -1,30 +1,27 @@
 package Model;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 @Entity
-@Table(name="member")
-public class member {
+@Table(name="porder")
+public class porder {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	private String name;
-	private String address;
-	private String[] interest;
-	public member() {
+	private String[] product;
+	public porder() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public member(String name, String address, String[] interest) {
+	public porder(String name, String[] product) {
 		super();
 		this.name = name;
-		this.address = address;
-		this.interest = interest;
+		this.product = product;
 	}
 	public Integer getId() {
 		return id;
@@ -38,18 +35,13 @@ public class member {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getAddress() {
-		return address;
+	public String[] getProduct() {
+		return product;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setProduct(String[] product) {
+		this.product = product;
 	}
-	public String[] getInterest() {
-		return interest;
-	}
-	public void setInterest(String[] interest) {
-		this.interest = interest;
-	}
+	
 	
 
 }

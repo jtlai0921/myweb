@@ -3,19 +3,15 @@ package Dao;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.mysql.fabric.xmlrpc.base.Member;
+import Model.porder;
 
-import Model.member;
-
-public class memberDao implements implDao{
+public class porderDao implements implDao{
 
 	public static void main(String[] args) {
-	member m=implDao.a1.getBean("m",member.class);
-	
-	//System.out.println(m.getName());
-	
-	new memberDao().add(m);
-	
+		porder p=a1.getBean("p",porder.class);
+		
+		new  porderDao().add(p);
+
 	}
 
 	@Override
