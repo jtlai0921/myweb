@@ -1,5 +1,5 @@
 package Aop;
 
-public class a {
+public class b {
 
 }
