@@ -7,5 +7,7 @@ C:\myweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1760275427.index
 \sample2\src\main\java
 C:\myweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\733248496.index
 \springEx2\src\main\java
+C:\myweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2227522954.index
+\SpringMVCEx\src\main\java
 C:\myweb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2833589560.index
 \sample\src\main\java
