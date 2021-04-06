@@ -12,7 +12,7 @@ public class test {
 		implAop iaop=(implAop) a1.getBean("aopDao");
 		iaop.withAop();
 //		
-//		new AopDao().withAop();
+		new AopDao().withAop();
 	}
 
 }
